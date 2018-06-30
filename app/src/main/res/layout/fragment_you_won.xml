@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.natifeslots.UI.YouWonFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOU WON!"
+        android:layout_below="@id/coins_container"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/you_won_background"
+        android:padding="40dp"/>
+    <RelativeLayout
+        android:id="@+id/coins_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-30dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coins_snackbar"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/won_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="100\ncoins"/>
+    </RelativeLayout>
+</RelativeLayout>
